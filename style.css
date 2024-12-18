@@ -17,7 +17,25 @@
 .footer {
     padding: 10px;
     background-color: rgb(215, 208, 12);
-    grid-area: f; 
+}
+
+div:nth-child(5) {
+    background-color: rgb(37, 138, 101);
+}
+
+div:nth-child(6) {
+    background-color: rgb(129, 6, 41);
+}
+div:nth-child(7) {
+    background-color: rgb(215, 208, 12);
+}
+
+div:nth-child(8) {
+    background-color: rgb(37, 138, 101);
+}
+
+div:nth-child(9) {
+    background-color: rgb(129, 6, 41);
 }
 
 /*GRID*/
@@ -26,11 +44,7 @@
     text-align: center;
     color: #fff;
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 50px 1fr 50px;
-    grid-gap: 5px;  
-    grid-template-areas: 
-        ". . h h h h h h h h h h"
-        "m m c c c c c c c c c c"
-        ". . f f f f f f f f f f"
+    grid-template: repeat(2,1fr) / repeat(3,1fr);
+    /* grid-template-rows: 1fr 2fr; */
+    grid-gap: 5px;
 }
